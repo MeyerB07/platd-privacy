@@ -1,50 +1,117 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Platd Privacy Policy</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 680px; margin: 60px auto; padding: 0 24px; color: #1a1a1a; line-height: 1.7; }
-    h1 { font-size: 28px; margin-bottom: 4px; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 720px; margin: 60px auto; padding: 0 24px; color: #1a1a1a; line-height: 1.75; }
+    h1 { font-size: 30px; margin-bottom: 4px; }
     .date { color: #666; font-size: 14px; margin-bottom: 40px; }
-    h2 { font-size: 18px; margin-top: 36px; }
-    a { color: #007aff; }
+    h2 { font-size: 19px; margin-top: 44px; border-bottom: 1px solid #eee; padding-bottom: 6px; }
+    a { color: #E8622A; }
+    table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 14px; }
+    th, td { text-align: left; padding: 8px 10px; border: 1px solid #ddd; }
+    th { background: #f7f7f7; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    .highlight { background: #fff8f5; border-left: 3px solid #E8622A; padding: 12px 16px; margin: 16px 0; border-radius: 0 6px 6px 0; }
   </style>
 </head>
 <body>
   <h1>Privacy Policy for Platd</h1>
-  <p class="date">Last updated: May 15, 2026</p>
+  <p class="date">Last updated: May 30, 2026</p>
 
-  <h2>Information We Collect</h2>
+  <h2>Who We Are</h2>
+  <p>Platd ("we", "our", "us") is operated by Bruno Meyer, based in California, United States.</p>
+  <p>Contact: <a href="mailto:PlatdRecipes@gmail.com">PlatdRecipes@gmail.com</a><br>
+  Privacy inquiries: <a href="mailto:PlatdRecipes@gmail.com">PlatdRecipes@gmail.com</a></p>
+
+  <h2>Children's Privacy (COPPA)</h2>
+  <div class="highlight">
+    <strong>Platd is not directed to children under the age of 13.</strong>
+  </div>
+  <p>We do not knowingly collect personal information from anyone under 13. Before creating an account, all users are required to confirm their date of birth through a mandatory age gate. If we learn we have collected data from a child under 13 without verifiable parental consent, we will delete that data immediately. If you believe a child under 13 has provided us with personal information, contact us at <a href="mailto:PlatdRecipes@gmail.com">PlatdRecipes@gmail.com</a>.</p>
+
+  <h2>What Data We Collect</h2>
   <ul>
-    <li>Email address (used for account creation and login)</li>
-    <li>User ID (to identify your account)</li>
-    <li>Recipes you save, like, or interact with</li>
-    <li>Profile information you choose to provide</li>
+    <li><strong>Account data:</strong> email address, password (hashed, never stored in plaintext), display name, age, gender, username</li>
+    <li><strong>Profile data:</strong> profile photo, cooking preferences (cuisines, dietary needs, skill level), character selection</li>
+    <li><strong>Usage data:</strong> recipes swiped, recipes liked, cook log entries, AI Chef messages sent, fridge scan results, cook streaks</li>
+    <li><strong>Device data:</strong> device type, OS version, app version</li>
+    <li><strong>Analytics data:</strong> in-app events (sign-up, swipe, scan, AI prompt) stored in Firebase Firestore</li>
+    <li><strong>Photos:</strong> images you upload to cook log entries, stored on Cloudinary CDN</li>
+    <li><strong>Social data:</strong> followers, following relationships, notifications sent and received</li>
   </ul>
 
-  <h2>How We Use It</h2>
+  <h2>How We Use Your Data</h2>
   <ul>
-    <li>To provide and personalize the app experience</li>
-    <li>To save your preferences and liked recipes</li>
-    <li>To enable features like your fridge, chef, and grocery list</li>
+    <li>To create and maintain your account</li>
+    <li>To personalise your recipe feed based on your preferences and swipe history</li>
+    <li>To provide AI Chef responses tailored to your pantry and goals</li>
+    <li>To track your cook streak and log history</li>
+    <li>To enable social features (follow, notifications, friend feed)</li>
+    <li>To process and validate your subscription through RevenueCat and Apple / Google Pay</li>
+    <li>To improve app features via anonymised usage analytics</li>
+    <li>To enforce our Terms of Service and detect abuse</li>
   </ul>
+  <p><strong>We do not use your data for advertising targeting or sell it to data brokers.</strong></p>
 
   <h2>Third-Party Services</h2>
-  <p>We use Firebase (Google) for authentication and data storage.</p>
-  <p><a href="https://firebase.google.com/support/privacy">Firebase Privacy Policy</a></p>
+  <table>
+    <thead>
+      <tr><th>Service</th><th>Purpose</th><th>Privacy Policy</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Google Firebase (Auth, Firestore, Storage)</td><td>Authentication, database, file storage</td><td><a href="https://firebase.google.com/support/privacy">Link</a></td></tr>
+      <tr><td>Google Analytics for Firebase</td><td>In-app event tracking</td><td><a href="https://policies.google.com/privacy">Link</a></td></tr>
+      <tr><td>RevenueCat</td><td>Subscription management and purchase validation</td><td><a href="https://www.revenuecat.com/privacy">Link</a></td></tr>
+      <tr><td>Cloudinary</td><td>Cook log photo storage and CDN delivery</td><td><a href="https://cloudinary.com/privacy">Link</a></td></tr>
+      <tr><td>OpenAI (AI Chef)</td><td>AI-generated cooking guidance</td><td><a href="https://openai.com/privacy">Link</a></td></tr>
+      <tr><td>Expo / EAS</td><td>App delivery and over-the-air updates</td><td><a href="https://expo.dev/privacy">Link</a></td></tr>
+      <tr><td>Apple Sign In / Google Sign In</td><td>SSO authentication</td><td>Per respective provider</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Subscriptions &amp; Billing</h2>
+  <p>Platd offers an optional auto-renewing subscription ("Platd PRO") processed exclusively through the Apple App Store or Google Play.</p>
+  <ul>
+    <li>Payment is charged to your Apple ID or Google account at confirmation of purchase.</li>
+    <li>Subscriptions auto-renew unless cancelled at least 24 hours before the end of the current billing period.</li>
+    <li>Manage or cancel your subscription at any time in your device's Subscriptions settings.</li>
+    <li>Unused portions of a free trial are forfeited when you purchase a subscription during the trial period.</li>
+    <li>We do not have access to your full payment card details.</li>
+  </ul>
 
   <h2>Data Retention</h2>
-  <p>We retain your data while your account is active. You may request deletion by contacting us.</p>
+  <p>We retain your personal data for as long as your account is active. If you delete your account (via Settings &rarr; Delete Account), we permanently delete your Firestore profile, cook log, and social data within 30 days. Cloudinary-hosted photos are deleted within 14 days of account deletion. Anonymised analytics events (no UID) may be retained for up to 12 months for product improvement.</p>
 
-  <h2>Children's Privacy</h2>
-  <p>Platd is not directed at children under 13. We do not knowingly collect data from children under 13.</p>
+  <h2>Security</h2>
+  <ul>
+    <li>Firebase Authentication for secure credential management (passwords never stored in plaintext)</li>
+    <li>Firestore Security Rules restricting data access to authenticated users only</li>
+    <li>HTTPS/TLS for all data in transit</li>
+    <li>Cloudinary signed uploads for photo assets</li>
+  </ul>
+  <p>No method of transmission over the Internet is 100% secure. We cannot guarantee absolute security, but we will notify affected users in the event of a data breach as required by applicable law.</p>
+
+  <h2>Your Rights</h2>
+  <ul>
+    <li><strong>Access</strong> data we hold about you &mdash; email <a href="mailto:PlatdRecipes@gmail.com">PlatdRecipes@gmail.com</a></li>
+    <li><strong>Correct</strong> inaccurate data via the Profile settings screen</li>
+    <li><strong>Delete</strong> your account and all associated data via Settings &rarr; Delete Account</li>
+    <li><strong>Opt out</strong> of analytics by deleting your account</li>
+    <li><strong>Export</strong> your data upon written request (response within 30 days)</li>
+  </ul>
+  <p>California residents have additional rights under the CCPA, including the right to know what personal information is sold or disclosed (we do not sell data) and the right to non-discrimination for exercising privacy rights.</p>
 
   <h2>Changes to This Policy</h2>
-  <p>We may update this policy. Continued use of the app after changes constitutes acceptance.</p>
+  <p>We may update this Privacy Policy from time to time. When we do, we will update the "Last Updated" date at the top of this page. For material changes, we will notify users via an in-app alert or email. Continued use of the app after changes constitutes acceptance of the revised policy.</p>
+
+  <h2>Governing Law</h2>
+  <p>This Privacy Policy is governed by the laws of the State of California, United States, without regard to its conflict of law provisions.</p>
 
   <h2>Contact</h2>
-  <p><a href="mailto:PlatdRecipes@gmail.com">PlatdRecipes@gmail.com</a></p>
+  <p>Questions about this policy? Email us at <a href="mailto:PlatdRecipes@gmail.com">PlatdRecipes@gmail.com</a></p>
 </body>
 </html>
